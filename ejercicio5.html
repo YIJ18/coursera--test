@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/estilo.css">
+    <title>Inicio de Css</title>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página</h1>
+        <nav>
+            <a href="http://127.0.0.1:5500/index.html">Inicio</a>
+            <a href="#acerca">Acerca de</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="secciones">
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Esta es la sección de inicio. Aquí puedes poner una introducción breve sobre tu página.</p>
+        </section>
+
+        <section id="acerca">
+            <h2>Acerca de</h2>
+            <p>En esta sección, puedes describir quién eres o qué hace tu empresa.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Servicio 1</li>
+                <li>Servicio 2</li>
+                <li>Servicio 3</li>
+            </ul>
+        </section>
+    </div>
+
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4 {
+    line-height: 12px;
+    text-align: center;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+header {
+background-color: black;
+opacity: .6;
+padding: 50px;
+}
+
+nav {
+    display: block;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 0;
+    justify-content: space-between;
+    gap: 20px;
+    color: aliceblue;
+}
+
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    text-align: justify;
+}
+
