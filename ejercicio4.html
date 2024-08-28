@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
+
 <body>
     <h1>Maneras de hacer y generar un formulario</h1>
     <section id="contacto">
         <h2>Contacto</h2>
-        <form action="#">
+        <form action="http://127.0.0.1:5500/ejercicio5.html">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre">
 
@@ -22,5 +24,48 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
+
+    <h1>Investigación propia</h1>
+    <section class="autoinvestigacion">
+        <div>
+            <h3>Tipos de entrada</h3>
+            <ul>
+                <li>input
+                    <ul>
+                        <li>type="text"</li>
+                        <li>type="password"</li>
+                        <li>type="email"</li>
+                        <li>type="checkbox"</li>
+                        <li>type="file"</li>
+                        <li>type="submit"</li>
+                    </ul>
+                </li>
+                <li>textarea</li>
+                <li>select</li>
+                <li>option, select</li>
+                <li>button</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Atributos importantes</h3>
+            <ul>
+                <li>action</li>
+                <li>method: Get o Post</li>
+                <ul>
+                    <li>GET: Envia</li>
+                    <li>POST: Entorno</li>
+                </ul>
+                <li>enctype</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Para validar la información de los formularios</h3>
+            <ul>
+                <li>Atributos como <b>required, pattern, min, max, maxlength, minlength</b>.</li>
+            </ul>
+        </div>
+    </section>
 </body>
+
 </html>
