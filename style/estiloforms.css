@@ -1,0 +1,9 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    text-align: center;
+}
+
+h1, h2, h3, h4, p, li, form {
+    color: white;
+}

@@ -2,7 +2,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     line-height: 12px;
     text-align: center;
 }
@@ -12,14 +15,17 @@ h1 {
 }
 
 header {
-background-color: black;
-opacity: .6;
-padding: 50px;
+    background-color: black;
+    opacity: .6;
+    padding: 50px;
 }
 
 nav {
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px;
+    font-weight: bold;
 }
 
 a {
@@ -34,10 +40,20 @@ a {
 .secciones {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
+    column-gap: 20px;
     text-align: justify;
 }
 
-#contacto {
-    background-color: beige;
+.formulario {
+    background-color: black;
+    font-weight: bold;
+    opacity: .6;
+    padding: 30px;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgb(41, 38, 38) 0%, rgb(41, 40, 40) 100%);
+}
+
+label {
+    color: white;
+    display: block;
 }
