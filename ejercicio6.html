@@ -1,34 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Formulario Bootstrap!</title>
+    <title>Bootstrap con formulario horizontal</title>
 </head>
+
 
 <body>
 
     <nav>
-		<ol class="nav">
-			<li class="nav-item"><a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/ejercicio1.html">Headings y parrafos</a></li>
-			<li class="nav-item"><a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/ejercicio2.html">Listas</a></li>
-			<li class="nav-item"><a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/ejercicio3.html">Imagenes</a></li>
-			<li class="nav-item"><a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/ejercicio4.html">Formularios</a></li>
-			<li class="nav-item"><a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/ejercicio5.html">Inicio de enlace con css</a></li>
-			<li class="nav-item"><a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/ejercicio6.html">Bootstrap</a></li>
-			<li class="nav-item"><a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/ejercicio7.html">Formulario Horizontal</a></li>
-			<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Ejercicico 8</a></li>
-			<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Ejercicico 9</a></li>
+        <ol class="nav">
+            <li class="nav-item"><a class="nav-link active" aria-current="page"
+                    href="http://127.0.0.1:5500/ejercicio1.html">Headings y parrafos</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page"
+                    href="http://127.0.0.1:5500/ejercicio2.html">Listas</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page"
+                    href="http://127.0.0.1:5500/ejercicio3.html">Imagenes</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page"
+                    href="http://127.0.0.1:5500/ejercicio4.html">Formularios</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page"
+                    href="http://127.0.0.1:5500/ejercicio5.html">Inicio de enlace con css</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page"
+                    href="http://127.0.0.1:5500/ejercicio6.html">Bootstrap</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page"
+                    href="http://127.0.0.1:5500/ejercicio7.html">Formulario Horizontal</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Ejercicico 8</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Ejercicico 9</a></li>
 
-		</ol>
-	</nav>
+        </ol>
+    </nav>
 
     <h1 class="text-center">Formulario Bootstrap</h1>
 
@@ -64,7 +68,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="numero" class="form-label">Número de 6 dígitos</label>
-                    <input type="text" class="form-control" id="numero" placeholder="Introduce un número de 6 dígitos"
+                    <input type="number" class="form-control" id="numero" placeholder="Introduce un número de 6 dígitos"
                         pattern="\d{6}" required>
                     <div class="valid-feedback">
                         Looks good!
@@ -117,23 +121,22 @@
                 </div>
 
             </div>
-            <div class="col-12">
+
+            <div class="d-flex justify-content-center">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                        Acepto los términos y condiciones
-                    </label>
-                    <div class="invalid-feedback">
-                        nO ESTA BIEN.
-                    </div>
+                    <label class="form-check-label" for="invalidCheck">Acepto los términos y condiciones</label>
                 </div>
             </div>
-            <div class="col-12">
+
+
+            <div class="d-grid gap-2 col-6 mx-auto">
                 <button class="btn btn-primary" type="submit">Enviar</button>
             </div>
 
         </form>
     </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
