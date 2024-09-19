@@ -1,8 +1,3 @@
-var company = new Object();
-company.name = "Facebook";
-company.ceo = "Mark";
-console.log(company);
-
 document.getElementById('formulario').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -16,14 +11,34 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     console.log("Tasa Anual: " + tasaAnual + "%");
     console.log("Pago Mensual: $" + pagoMensual);
 
-    const totalPagos = montoPrestamo * (1 + (tasaAnual / 100));
-    const interes = montoPrestamo*((tasaAnual/100)/12);
-    const capital = pagoMensual - interes;
-    const saldo = montoPrestamo - interes;
-    const numeroPago = 1;
+    //Variables que se usan para calcular los datos necesarios de la tabla
+    let interes;
+    let capital;
+    let saldo;
+    let numeroPago = 1;
+
+    //genera la base de la tabla
+    let tablaHTML = `
+    <h2>Amortización</h2>
+    <table class="table table-striped">
+        <tr>
+            <th># Pago</th>
+            <th>Monto de Préstamo</th>
+            <th>Interés</th>
+            <th>Capital</th>
+            <th>Saldo</th>
+        </tr>
+`;
 
     //Genera una tabla con los valores
-    const tablaHTML = `
+
+    do{
+
+        interes = montoPrestamo*((tasaAnual/100)/12);
+        capital = pagoMensual - interes;
+        saldo = montoPrestamo - capital;
+
+        const tablaHTML = `
         <h2>Evento</h2>
         <table  class="table table-striped">
             <tr>
@@ -42,6 +57,11 @@ document.getElementById('formulario').addEventListener('submit', function(event)
             </tr>
         </table>
     `;
+    montoPrestamo = saldo;
+    numeroPago++;
+    } while(Math.round(saldo) >= 0);
+    
+    
 
     // Inserta la tabla en el div con id "tabla_resultado"
     document.getElementById('tabla_resultado').innerHTML = tablaHTML;
