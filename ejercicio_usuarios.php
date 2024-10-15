@@ -15,7 +15,7 @@
     <div class="rounded shadow-lg p-3 mb-5 bg-body-tertiary m-3">
         <h1 class="text-center">Registro de Usuarios</h1>
 
-        <form id="formulario">
+        <form id="formulario" method="POST">
 
             <div class="row mb-3">
                 <label for="id_usuario" class="col-sm-2">Id de Usuario</label>
@@ -74,7 +74,7 @@
             </div>
 
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" type="POST">Enviar</button>
+                <button class="btn btn-primary" type="submit">Enviar</button>
             </div>
 
         </form>
