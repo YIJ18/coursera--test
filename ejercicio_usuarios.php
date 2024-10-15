@@ -86,7 +86,7 @@
         </div>
     </div>
 
-    <script src="js/forms_ajax.js"></script>
+    <script src="js/usuarios.js"></script>
 </body>
 
 </html>

@@ -46,8 +46,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
         document.getElementById('tabla_resultado').innerHTML = 'Datos enviados correctamente';
         document.getElementById('alerta').innerHTML = ''; // Limpiar alertas anteriores
     })
-    .catch((error) => {
-        console.error('Error:', error);
-        document.getElementById('alerta').innerHTML = 'Error al enviar los datos';
-    });
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+    
 });
