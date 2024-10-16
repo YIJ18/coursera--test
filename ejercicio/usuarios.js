@@ -28,7 +28,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
         ldap_server
     };
 
-    fetch('./php/usuarios.php', {
+    fetch('usuarios.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -86,7 +86,7 @@
         </div>
     </div>
 
-    <script src="./js/usuarios.js"></script>
+    <script src="usuarios.js"></script>
 </body>
 
 </html>
