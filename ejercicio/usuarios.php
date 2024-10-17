@@ -26,7 +26,7 @@ catch (Exception $e)
   exit();
 
  }
- $link = new ccaMySQL($pdo);
+ 
 
 
 ?>

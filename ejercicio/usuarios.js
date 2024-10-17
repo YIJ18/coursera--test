@@ -28,7 +28,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
         ldap_server
     };
 
-    fetch('usuarios.php', {
+    fetch('controlador.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -42,7 +42,7 @@ document.getElementById('formulario').addEventListener('submit', function (event
         return response.json();
     })
     .then(data => {
-        console.log('Éxito:', data);
+        console.log('Éxito: ' + body);
         document.getElementById('tabla_resultado').innerHTML = 'Datos enviados correctamente';
         document.getElementById('alerta').innerHTML = ''; // Limpiar alertas anteriores
     })
